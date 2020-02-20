@@ -9,6 +9,12 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+
+    @using (Html.BeginForm("Index", "Movies", FormMethod.Get)){    
+         @:Genre: @Html.DropDownList("movieGenre", "All")
+         @:Titre: @Html.TextBox("SearchString") <br />   
+         <button type="submit" class="btn btn-primary">Search</button>
+        } 
 </p>
 <table class="table">
     <tr>
