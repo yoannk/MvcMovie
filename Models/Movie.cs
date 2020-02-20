@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 
 namespace MvcMovie.Models
@@ -10,7 +11,6 @@ namespace MvcMovie.Models
         public DateTime ReleaseDate { get; set; }
         public string Genre { get; set; }
         public decimal Price { get; set; }
-        public int MyProperty { get; set; }
     }
 
     class MovieDBContext : DbContext
